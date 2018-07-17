@@ -1,1 +1,2 @@
-console.log("master.js is linked properly!")
+import { dataset } from './data.js';
+console.log(dataset);
