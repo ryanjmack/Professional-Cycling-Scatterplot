@@ -18,8 +18,27 @@ const yScale = d3.scaleLinear()
   .domain([d3.max(dataset, (cyclist) => cyclist.seconds), d3.min(dataset, (cyclist) => cyclist.seconds)])
   .range([height - yAxisPadding, nonAxisPadding]);
 
-// create the svg 
+// create the svg
 const svg = d3.select('main')
   .append('svg')
   .attr('height', height)
   .attr('width', width);
+
+// populate the scatterplot
+svg.selectAll('circle')
+  .data(dataset)
+  .enter()
+  .append('circle')
+  .attr('cx', (cyclist) => xScale(cyclist.year))
+  .attr('cy', (cyclist) => yScale(cyclist.seconds))
+  .attr('r', circleRadius)
+  .attr('fill', (cyclist) => (cyclist.doping) ? "red" : "blue")
+  .append('title')
+  .text(cyclist => {
+    let output = `${cyclist.name}: ${cyclist.nationality}\nTime: ${cyclist.time}`;
+
+    if (cyclist.doping) {
+        output += `\n\n${cyclist.doping}\nSource: ${cyclist.url}`
+    }
+    return output;
+  });
