@@ -1,0 +1,24 @@
+main {
+  align-items: center;
+  background-color: $graph-background;
+  box-shadow: 1px 1px 3px 0px #747474;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  max-width: 100%;
+  padding: 1.5em 2em;
+
+  h1, h2 {
+    font: {
+      family: Arial, sans-serif;
+      weight: lighter;
+    }
+    margin-top: 0;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 0.3em;
+  }
+}

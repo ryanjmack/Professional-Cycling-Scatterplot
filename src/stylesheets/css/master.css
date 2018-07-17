@@ -4,7 +4,7 @@ html {
   font-size: 1rem;
   font-family: 'Arial', 'Helvetica', sans-serif;
   max-width: 100vw;
-  min-height: 100vh; }
+  height: 100vh; }
 
 *,
 *:before,
@@ -13,9 +13,45 @@ html {
           box-sizing: inherit; }
 
 body {
-  background-color: #BADA55;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d5d5d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   width: 100%; }
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 1px 1px 3px 0px #747474;
+          box-shadow: 1px 1px 3px 0px #747474;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  max-width: 100%;
+  padding: 1.5em 2em; }
+  main h1, main h2 {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    margin-top: 0;
+    text-align: center; }
+  main h1 {
+    margin-bottom: 0.3em; }
 
 /*# sourceMappingURL=master.css.map */

@@ -1,9 +1,10 @@
+
 html {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: 'Arial', 'Helvetica', sans-serif;
   max-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 *,
@@ -13,7 +14,11 @@ html {
 }
 
 body {
-  background-color: $primary;
+  align-items: center;
+  background-color: $body-background;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   margin: 0;
   padding: 0;
   width: 100%;
