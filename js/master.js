@@ -61,3 +61,22 @@ svg.append('text')
   .text('Year')
   .attr('transform', `translate(${width / 2}, ${height})`)
   .attr('font-size', '20');
+
+
+// create the y axis
+const yAxis = d3.axisLeft(yScale)
+  .tickFormat(d => {
+    let mins = Math.floor(d / 60);
+    let seconds = d % 60;
+    return `${mins}:${(seconds < 10) ? seconds.toString() + '0' : seconds}`;
+  })
+  .tickSize(width - yAxisPadding - nonAxisPadding);
+
+svg.append('g')
+  .attr('transform', `translate(${width - nonAxisPadding}, 0)`)
+  .call(yAxis);
+
+svg.append('text')
+  .text('Time in Minutes')
+  .attr('transform', `rotate(270)translate(${-height / 1.64}, 0)`)
+  .attr('font-size', '20');
