@@ -1,18 +1,31 @@
-# frontend-project-template
+# US GDP Data Visualization
 
-This is boilerplate code for simple front end projects, utilizing a task runner, gulp, which makes learning and development much easier.
+This is a simple data visualization project I created using a dataset I found from [freeCodeCamp]https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json) using the popular data visualization library [D3.js](https://d3js.org/).
 
-## Basics
-The default task, `gulp`, will spin up a webserver on a local port that compiles scss to CSS and also autoprefixes the CSS. BrowserSync will watch for any changes to a file ending in .html, .scss and .js  in the `src/` directory and will reload the page to reflect any changes. There will also be a link in dev tools to a sourcemap (this shows what scss file and what line of that file is responsible for the css rule in devtools for easy debugging).
+Alpe d'Huez is extremely famous in the Tour De France. It was the first mountaintop summit ever featured in the tour, at 14.454km long with an average gradient of 8.1. Since 1994 ascents have been timed and most of the fastest climbers have something in common; they were accused of doping at some point in the career, most notably Marco Pantani and Lance Armstrong. Pantani holds the record at
+37' 35" going 23.08 km/h. [Source](https://en.wikipedia.org/wiki/Alpe_d%27Huez#Cycle_racing)
 
-The only task that needs to be manually called is `gulp` -- simply type `gulp` on the command line while in the root of the repo.
+An image of the climb:
+![Profile of Alp D'Huez](Alpe-d'Huez.jpg)
 
-## How to use this repo
-1. If you want to modify this repo for your own personal use, fork it then follow the instructions. Otherwise skip the optional step.
-* Clone this repository
-* Navigate to the the root of the cloned repo
-* (OPTIONAL STEP) Reference the original boilerplate using `git remote add upstream URL`. This allows you to pull changes made to the boilerplate code in the future using `git pull upstream master`
-* Initialize an empty repo on Github and change the remote's URL `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
-* Use`npm install` to get all required node modules
-* Type `gulp` in the command line while in the directory to run default task
-* Start coding
+## Getting Started
+
+Check out the [live demo](https://ryanjmack.github.io/Professional-Cycling-Scatterplot/)!
+
+## Built With
+
+* HTML/SCSS
+* ES6 JavaScript
+* D3.js
+* Gulp for automating tasks
+
+
+## Final Thoughts
+This was another great mini project while learning D3.js
+
+I am still figuring out how to best do things in D3, especially formatting the axes how I envision them. I have a couple more projects that I will be doing!
+
+---
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ryanjmack/Professional-Cycling-Scatterplot/blob/master/LICENSE.md) file for details
