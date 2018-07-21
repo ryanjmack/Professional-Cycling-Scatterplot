@@ -47,3 +47,17 @@ svg.selectAll('circle')
     }
     return output;
   });
+
+
+// create the x axis
+const xAxis = d3.axisBottom(xScale)
+  .tickFormat(n => n);
+
+svg.append('g')
+  .attr('transform', `translate(0, ${height - yAxisPadding})`)
+  .call(xAxis);
+
+svg.append('text')
+  .text('Year')
+  .attr('transform', `translate(${width / 2}, ${height})`)
+  .attr('font-size', '20');
