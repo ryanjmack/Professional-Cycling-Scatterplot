@@ -80,3 +80,40 @@ svg.append('text')
   .text('Time in Minutes')
   .attr('transform', `rotate(270)translate(${-height / 1.64}, 0)`)
   .attr('font-size', '20');
+
+
+/*
+  Legend at the top of the graph
+*/
+// legend for cyclists not accused of doping
+svg.append('circle')
+  .attr('r', circleRadius)
+  .attr('cx', yAxisPadding + nonAxisPadding)
+  .attr('cy', -nonAxisPadding * 3)
+  .attr('fill', '#3fac03')
+  .attr('stroke', '#222');
+
+svg.append('text')
+  .text('Never accused of doping')
+  .attr('x', yAxisPadding + nonAxisPadding * 2)
+  .attr('y', -nonAxisPadding * 3 + nonAxisPadding / 2)
+  .attr('font-size', 12);
+
+// legend for riders accused of doping
+svg.append('circle')
+  .attr('r', circleRadius)
+  .attr('cx', yAxisPadding + nonAxisPadding)
+  .attr('cy', -nonAxisPadding)
+  .attr('fill', '#e10d0d')
+  .attr('stroke', '#222');
+
+svg.append('text')
+  .text('Accused of doping')
+  .attr('x', yAxisPadding + nonAxisPadding * 2)
+  .attr('y', -nonAxisPadding / 2)
+  .attr('font-size', 12);
+
+
+// resize axes font-sizes
+svg.selectAll('g')
+  .attr('font-size', '15');
