@@ -1,4 +1,4 @@
-[frontend-boilerplate] License
+Professional-Cycling-Scatterplot License
 MIT License
 Copyright © 2018
 
