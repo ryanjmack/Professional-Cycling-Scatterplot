@@ -1,4 +1,4 @@
-# US GDP Data Visualization
+# Professional Cycling Scatterplot Visualization
 
 This is a simple data visualization project I created using a dataset I found from [freeCodeCamp](https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json) using the popular data visualization library [D3.js](https://d3js.org/).
 
